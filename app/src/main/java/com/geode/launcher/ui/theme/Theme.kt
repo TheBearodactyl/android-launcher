@@ -40,14 +40,21 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+private val RosePineColorScheme = darkColorScheme(
+        primary = RosePineBase,
+        secondary = RosePineSurface,
+        tertiary = RosePineOverlay
+)
+
 enum class Theme {
-    LIGHT, DARK;
+    LIGHT, DARK, ROSEPINE;
 
     companion object {
         @Composable
         fun fromInt(value: Int) = when (value) {
             1 -> LIGHT
             2 -> DARK
+            3 -> ROSEPINE
             else -> if (isSystemInDarkTheme()) DARK else LIGHT
         }
     }
@@ -76,6 +83,7 @@ fun GeodeLauncherTheme(
         theme == Theme.DARK && blackBackground ->
             DarkColorScheme.copy(surface = Color.Black, background = Color.Black)
         theme == Theme.DARK -> DarkColorScheme
+        theme == Theme.ROSEPINE -> RosePineColorScheme
         else -> LightColorScheme
     }
 
