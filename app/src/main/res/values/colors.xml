@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="iris">#C4A7E7</color>
+    <color name="foam">#9CCFD8</color>
+    <color name="pine">#31748F</color>
+    <color name="rose">#EBBCBA</color>
+    <color name="gold">#F6C177</color>
+    <color name="love">#EB6F92</color>
 </resources>
